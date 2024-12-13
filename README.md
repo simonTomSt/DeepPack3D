@@ -101,7 +101,7 @@ for result in deeppack3d('rl', 5, n_iterations=-1, data='file', path='./input.tx
 ## Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests to improve the software.
 
-## Citation
+## Citation/Reference
 If you find this package useful, please feel free to cite our following work.
 
 Tsang, Y. P., Mo, D. Y., Chung, K. T., & Lee, C. K. M. (2025). A deep reinforcement learning approach for online and concurrent 3D bin packing optimisation with bin replacement strategies. *Computers in Industry*, *164*, 104202. https://doi.org/10.1016/j.compind.2024.104202
