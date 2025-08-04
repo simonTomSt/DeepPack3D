@@ -1,3 +1,42 @@
+# numpy==1.26.4
+# matplotlib==3.9.0
+# tensorflow>=2.13.0
+# seaborn>=0.11.0
+
+
+# Core dependencies (existing)
 numpy==1.26.4
 matplotlib==3.9.0
-tensorflow==2.10.0
+tensorflow>=2.13.0
+seaborn>=0.11.0
+
+# Advanced RL and optimization packages
+scipy>=1.10.0
+scikit-optimize>=0.9.0
+pulp>=2.7.0
+optuna>=3.0.0
+
+# Enhanced ML utilities
+scikit-learn>=1.3.0
+pandas>=2.0.0
+tqdm>=4.65.0
+
+# Visualization enhancements
+plotly>=5.15.0
+tensorboard>=2.13.0
+
+# Mathematical optimization (optional but recommended)
+cvxpy>=1.3.0
+ortools>=9.7.0
+
+# Performance monitoring
+psutil>=5.9.0
+memory-profiler>=0.61.0
+
+# Data handling
+h5py>=3.9.0
+joblib>=1.3.0
+
+# Development and debugging
+ipython>=8.0.0
+jupyter>=1.0.0

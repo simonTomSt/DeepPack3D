@@ -1,0 +1,5115 @@
+/Users/simon/Documents/bin-3d/DeepPack3D/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+🎯 STARTING OPTIMIZED TRAINING FOR MAXIMUM SPACE UTILIZATION
+This will train a k=1 model to beat the 73% heuristic performance
+
+🚀 OPTIMIZED TRAINING FOR MAXIMUM SPACE UTILIZATION
+======================================================================
+Current heuristic best: ~73% → Target: 80%+
+Training iterations: 4000
+Bin size: (100, 140, 120)
+Expected training time: 5.0-10.0 hours
+======================================================================
+Training with 780 diverse package variants
+Starting optimized training at 10:11:47...
+🏆 NEW BEST: 31.1% utilization!
+🏆 NEW BEST: 42.6% utilization!
+🏆 NEW BEST: 51.0% utilization!
+🏆 NEW BEST: 54.0% utilization!
+🏆 NEW BEST: 56.0% utilization!
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+🏆 NEW BEST: 58.3% utilization!
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+🏆 NEW BEST: 61.6% utilization!
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+Iter  100/4000 | Time: 0.0h | ETA: 1.1h | Recent avg: 42.5% | Best: 61.6% | Eps: 0.907
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+🏆 NEW BEST: 64.9% utilization!
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update model
+update
+update model
+Iter  200/4000 | Time: 0.1h | ETA: 1.3h | Recent avg: 44.4% | Best: 64.9% | Eps: 0.821
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter  300/4000 | Time: 0.1h | ETA: 1.4h | Recent avg: 45.2% | Best: 64.9% | Eps: 0.744
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+Iter  400/4000 | Time: 0.2h | ETA: 1.4h | Recent avg: 44.5% | Best: 64.9% | Eps: 0.674
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+Iter  500/4000 | Time: 0.2h | ETA: 1.4h | Recent avg: 45.0% | Best: 64.9% | Eps: 0.611
+update model
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter  600/4000 | Time: 0.2h | ETA: 1.4h | Recent avg: 44.9% | Best: 64.9% | Eps: 0.554
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+Iter  700/4000 | Time: 0.3h | ETA: 1.3h | Recent avg: 45.8% | Best: 64.9% | Eps: 0.502
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+Iter  800/4000 | Time: 0.3h | ETA: 1.3h | Recent avg: 46.0% | Best: 64.9% | Eps: 0.455
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter  900/4000 | Time: 0.4h | ETA: 1.3h | Recent avg: 45.8% | Best: 64.9% | Eps: 0.413
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+Iter 1000/4000 | Time: 0.4h | ETA: 1.3h | Recent avg: 46.1% | Best: 64.9% | Eps: 0.375
+update model
+Checkpoint 1000: Avg=46.1% ±7.2%, Best=64.9%
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+Iter 1100/4000 | Time: 0.5h | ETA: 1.2h | Recent avg: 48.3% | Best: 64.9% | Eps: 0.340
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter 1200/4000 | Time: 0.5h | ETA: 1.2h | Recent avg: 48.0% | Best: 64.9% | Eps: 0.308
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+Iter 1300/4000 | Time: 0.6h | ETA: 1.2h | Recent avg: 48.1% | Best: 64.9% | Eps: 0.280
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+🏆 NEW BEST: 66.6% utilization!
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+Iter 1400/4000 | Time: 0.6h | ETA: 1.1h | Recent avg: 48.2% | Best: 66.6% | Eps: 0.254
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter 1500/4000 | Time: 0.6h | ETA: 1.1h | Recent avg: 49.4% | Best: 66.6% | Eps: 0.231
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+Iter 1600/4000 | Time: 0.7h | ETA: 1.0h | Recent avg: 47.6% | Best: 66.6% | Eps: 0.210
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+🏆 NEW BEST: 69.5% utilization!
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+Iter 1700/4000 | Time: 0.7h | ETA: 1.0h | Recent avg: 49.3% | Best: 69.5% | Eps: 0.191
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter 1800/4000 | Time: 0.8h | ETA: 1.0h | Recent avg: 49.2% | Best: 69.5% | Eps: 0.174
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+Iter 1900/4000 | Time: 0.8h | ETA: 0.9h | Recent avg: 50.8% | Best: 69.5% | Eps: 0.158
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+Iter 2000/4000 | Time: 0.9h | ETA: 0.9h | Recent avg: 48.7% | Best: 69.5% | Eps: 0.144
+update model
+Checkpoint 2000: Avg=48.8% ±7.3%, Best=69.5%
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter 2100/4000 | Time: 0.9h | ETA: 0.8h | Recent avg: 50.9% | Best: 69.5% | Eps: 0.131
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+Iter 2200/4000 | Time: 1.0h | ETA: 0.8h | Recent avg: 49.0% | Best: 69.5% | Eps: 0.120
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+Iter 2300/4000 | Time: 1.0h | ETA: 0.8h | Recent avg: 49.3% | Best: 69.5% | Eps: 0.109
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter 2400/4000 | Time: 1.1h | ETA: 0.7h | Recent avg: 49.8% | Best: 69.5% | Eps: 0.100
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+Iter 2500/4000 | Time: 1.1h | ETA: 0.7h | Recent avg: 50.3% | Best: 69.5% | Eps: 0.091
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+Iter 2600/4000 | Time: 1.2h | ETA: 0.6h | Recent avg: 51.8% | Best: 69.5% | Eps: 0.084
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter 2700/4000 | Time: 1.2h | ETA: 0.6h | Recent avg: 51.0% | Best: 69.5% | Eps: 0.077
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+Iter 2800/4000 | Time: 1.3h | ETA: 0.5h | Recent avg: 51.3% | Best: 69.5% | Eps: 0.070
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+Iter 2900/4000 | Time: 1.3h | ETA: 0.5h | Recent avg: 51.6% | Best: 69.5% | Eps: 0.065
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter 3000/4000 | Time: 1.3h | ETA: 0.4h | Recent avg: 51.8% | Best: 69.5% | Eps: 0.059
+update model
+update
+Checkpoint 3000: Avg=51.9% ±7.6%, Best=69.5%
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+Iter 3100/4000 | Time: 1.4h | ETA: 0.4h | Recent avg: 53.9% | Best: 69.5% | Eps: 0.010
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+Iter 3200/4000 | Time: 1.4h | ETA: 0.4h | Recent avg: 55.0% | Best: 69.5% | Eps: 0.010
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter 3300/4000 | Time: 1.8h | ETA: 0.4h | Recent avg: 55.8% | Best: 69.5% | Eps: 0.010
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+Iter 3400/4000 | Time: 1.9h | ETA: 0.3h | Recent avg: 54.8% | Best: 69.5% | Eps: 0.010
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+Iter 3500/4000 | Time: 1.9h | ETA: 0.3h | Recent avg: 54.1% | Best: 69.5% | Eps: 0.010
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter 3600/4000 | Time: 2.0h | ETA: 0.2h | Recent avg: 54.3% | Best: 69.5% | Eps: 0.010
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+Iter 3700/4000 | Time: 2.0h | ETA: 0.2h | Recent avg: 53.6% | Best: 69.5% | Eps: 0.010
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+Iter 3800/4000 | Time: 2.2h | ETA: 0.1h | Recent avg: 55.6% | Best: 69.5% | Eps: 0.010
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+Iter 3900/4000 | Time: 2.2h | ETA: 0.1h | Recent avg: 54.9% | Best: 69.5% | Eps: 0.010
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update
+update model
+update model
+update model
+update model
+update
+update model
+update model
+
+🎉 TRAINING COMPLETED!
+======================================================================
+Total training time: 2.3 hours
+Best utilization achieved: 69.5%
+Improvement vs heuristic: -3.5 percentage points
+Final performance: 53.9% ±5.1%
+Best model saved as: optimal_k1_final_1751970421.h5
+Model ready for use as: ./models/k=1.h5
+
+🏆 TRAINING COMPLETE!
+Best utilization achieved: 69.5%
+Model improvement: -3.5 percentage points vs heuristic
+
+🚀 Test your optimized model:
+python deeppack3d.py rl 1 --visualize --verbose=1

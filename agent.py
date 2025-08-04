@@ -9,39 +9,46 @@ from tensorflow.keras.initializers import orthogonal
 from env import *
 import collections, itertools
 
-def q_net(k=1):
+def q_net(k=1, bin_size=(100, 140, 120)):
     weight_decay = 0.0005
-    hmap_in = Input((32, 32, 1))
-    amap_in = Input((32, 32, 1))
+    
+    # Calculate input dimensions based on bin size
+    # Use depth and width for the 2D height map (D, W)
+    input_d = bin_size[2]  # depth = 120
+    input_w = bin_size[0]  # width = 100
+    
+    # Downsample for manageable input size
+    downsample_factor = 4
+    map_d = max(8, input_d // downsample_factor)  # At least 8x8
+    map_w = max(8, input_w // downsample_factor)
+    
+    hmap_in = Input((map_d, map_w, 1))
+    amap_in = Input((map_d, map_w, 1))
     imap_in = Input((k, 3))
     imap_x = Flatten()(imap_in)
-    const_in = Input((32, 32, 1))
+    const_in = Input((map_d, map_w, 1))
     
     x = concatenate([hmap_in, amap_in, const_in], axis=-1)
     
-    x = Conv2D(64, 11, strides=1, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
+    # Adjusted architecture for different input sizes
+    x = Conv2D(32, 5, strides=2, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
     x = BatchNormalization()(x)
-    x = Conv2D(128, 9, strides=1, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
+    x = Conv2D(64, 3, strides=2, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
     x = BatchNormalization()(x)
-    x = Conv2D(256, 7, strides=1, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
+    x = Conv2D(128, 3, strides=2, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
     x = BatchNormalization()(x)
-    x = Conv2D(512, 5, strides=1, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
-    x = BatchNormalization()(x)
-    x = Conv2D(1024, 3, strides=1, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
-    x = BatchNormalization()(x)
-    
-    x = Conv2D(2048, 2, strides=1, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
+    x = Conv2D(256, 3, strides=1, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
     x = BatchNormalization()(x)
     
     x = GlobalAveragePooling2D()(x)
     
-    emb = Dense(256, kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(imap_x)
+    emb = Dense(128, kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(imap_x)
     
     x = concatenate([x, emb], axis=-1)
     
-    x = Dense(1000, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
+    x = Dense(256, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
     
-    x = Dense(100, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
+    x = Dense(64, activation='relu', kernel_regularizer=l2(weight_decay), kernel_initializer='he_uniform')(x)
     
     x = Dense(1, activation='linear')(x)
     
@@ -76,9 +83,15 @@ class Agent:
         self.verbose = verbose
         self.visualize = visualize
         
+        # Calculate downsampling for the new bin size
+        self.bin_size = env.size
+        self.downsample_factor = 4
+        self.map_d = max(8, self.bin_size[2] // self.downsample_factor)  # depth
+        self.map_w = max(8, self.bin_size[0] // self.downsample_factor)  # width
+        
         if self.__train:
-            self.q_net = q_net(k=env.k - 1)
-            self.q_net_target = q_net(k=env.k - 1)
+            self.q_net = q_net(k=env.k - 1, bin_size=env.size)
+            self.q_net_target = q_net(k=env.k - 1, bin_size=env.size)
             self.q_optimizer = tf.keras.optimizers.Adam(learning_rate=self.warmup_lr)
             self.memory = collections.deque(maxlen=1000000)
         else:
@@ -122,16 +135,50 @@ class Agent:
         # item, bin, rotation_placement
         for i, j, k in action_space:
             _, (x, y, z), (w, h, d), _ = actions[i][j][k]
-            amap = self.env.p_map(j, (x, y, z, w, h, d))
-            amap = np.where(amap == 0, h_maps[j], y + h) / H
-
-            hmap = np.full(h_maps[j].shape, np.amax(amap))
+            
+            # Create action map
+            amap = np.zeros((D, W))  # height map is (depth, width)
+            if z + d <= D and x + w <= W:
+                amap[z:z + d, x:x + w] = (y + h) / H
+            
+            # Get height map and normalize
+            hmap = h_maps[j].copy().astype(float) / H
+            
+            # Ensure dimensions match
+            if hmap.shape != amap.shape:
+                min_d, min_w = min(hmap.shape[0], amap.shape[0]), min(hmap.shape[1], amap.shape[1])
+                hmap = hmap[:min_d, :min_w]
+                amap = amap[:min_d, :min_w]
+            
+            # Combine maps
+            combined_amap = np.where(amap == 0, hmap, amap)
+            
+            # Downsample for neural network
+            ds_d = max(1, hmap.shape[0] // self.map_d)
+            ds_w = max(1, hmap.shape[1] // self.map_w)
+            
+            hmap_ds = hmap[::ds_d, ::ds_w]
+            amap_ds = combined_amap[::ds_d, ::ds_w]
+            
+            # Ensure exact target size
+            if hmap_ds.shape[0] > self.map_d:
+                hmap_ds = hmap_ds[:self.map_d, :]
+                amap_ds = amap_ds[:self.map_d, :]
+            if hmap_ds.shape[1] > self.map_w:
+                hmap_ds = hmap_ds[:, :self.map_w]
+                amap_ds = amap_ds[:, :self.map_w]
+            
+            # Pad if necessary
+            if hmap_ds.shape[0] < self.map_d or hmap_ds.shape[1] < self.map_w:
+                pad_d = self.map_d - hmap_ds.shape[0]
+                pad_w = self.map_w - hmap_ds.shape[1]
+                hmap_ds = np.pad(hmap_ds, ((0, pad_d), (0, pad_w)), mode='edge')
+                amap_ds = np.pad(amap_ds, ((0, pad_d), (0, pad_w)), mode='edge')
 
             imap = imaps[j][np.arange(len(items)) != i]
-#             print(hmap, amap, imap)
 
-            hmap_in.append(hmap)
-            amap_in.append(amap)
+            hmap_in.append(hmap_ds)
+            amap_in.append(amap_ds)
             imap_in.append(imap)
             
         hmap_in, amap_in, imap_in = map(np.asarray, (hmap_in, amap_in, imap_in))
@@ -206,11 +253,21 @@ class Agent:
         
         self.q_optimizer.apply_gradients(zip(grad, self.q_net_target.trainable_variables))
         
-        self.q_optimizer.lr.assign(self.lr_scheduler(self.epoch))
+        # Fixed learning rate assignment for newer TensorFlow
+        new_lr = self.lr_scheduler(self.epoch)
+        try:
+            # Try newer TensorFlow syntax first
+            self.q_optimizer.learning_rate.assign(new_lr)
+        except AttributeError:
+            try:
+                # Try older TensorFlow syntax
+                self.q_optimizer.lr.assign(new_lr)
+            except AttributeError:
+                # If both fail, skip learning rate update
+                pass
         
         self.epoch += 1
     
-#         print([a * 0.5 + b * (1 - 0.5) for a, b in zip(self.q_net.get_weights(), self.q_net_target.get_weights())])
         if self.epoch % self.update_epochs == 0:
             print('update')
             self.q_net.set_weights([a * 0.5 + b * (1 - 0.5) for a, b in zip(self.q_net.get_weights(), self.q_net_target.get_weights())])
@@ -272,7 +329,20 @@ class Agent:
             yield None
             
             utils = [round(packer.space_utilization() * 100, 2) for packer in self.env.used_packers]
-            if self.verbose: print(f'Episode {ep}, util: {utils}, used bins: {self.env.used_bins}, ep_reward: {ep_reward:.2f}, memory: {len(self.memory) if self.memory is not None else None}, eps: {self.eps:.2f}, loss: {loss}, lr: {self.q_optimizer.lr.numpy() if self.q_optimizer is not None else None}')
+            
+            # Get learning rate safely for different TensorFlow versions
+            current_lr = None
+            if self.q_optimizer is not None:
+                try:
+                    current_lr = self.q_optimizer.learning_rate.numpy()
+                except AttributeError:
+                    try:
+                        current_lr = self.q_optimizer.lr.numpy()
+                    except AttributeError:
+                        current_lr = "N/A"
+            
+            if self.verbose: 
+                print(f'Episode {ep}, util: {utils}, used bins: {self.env.used_bins}, ep_reward: {ep_reward:.2f}, memory: {len(self.memory) if self.memory is not None else None}, eps: {self.eps:.2f}, loss: {loss}, lr: {current_lr}')
 
 class HeuristicAgent:
     def __init__(self, heuristic, env=MultiBinPackerEnv(n_bins=2, max_bins=-1, size=(32, 32, 32), k=10, verbose=True), verbose=True, visualize=False):
